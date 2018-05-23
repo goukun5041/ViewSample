@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!--全体レイアウト-->
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A1A9BA"
-    android:orientation="vertical"><!--ここで水平揃えてる-->
+    android:orientation="vertical"><!--水平揃え-->
 
     <!--名前入力-->
     <TextView
@@ -33,7 +35,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#df7401"
-        android:orientation="horizontal"><!--ここで平行揃えてる-->
+        android:orientation="horizontal"
+        android:weightSum="1"><!--平行揃え-->
 
         <!--ドリンク-->
         <CheckBox
@@ -41,17 +44,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="25dp"
+            android:layout_weight="0.05"
             android:background="#ffffff"
-            android:text="@string/cb_drink"/>
+            android:text="@string/cb_drink" />
         <!--フード-->
         <CheckBox
             android:id="@+id/cbFood"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="25dp"
+            android:layout_weight="0.05"
             android:background="#ffffff"
             android:text="@string/cb_food"/>
     </LinearLayout>
+
+    <!--ラジオボタン-->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#df7401"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:weightSum="1">
+
+        <!--男性ラジオボタン-->
+        <RadioButton
+            android:id="@+id/rbMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="0.05"
+            android:background="#ffffff"
+            android:text="@string/rb_male" />
+
+        <!--女性ラジオボタン-->
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="0.05"
+            android:background="#ffffff"
+            android:text="@string/rb_female"/>
+
+    </RadioGroup>
 
     <!--保存ボタン-->
     <Button
@@ -59,5 +100,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btSave" />
+
+    <!--選択ボックスをこれから作るところ-->
 
 </LinearLayout>
