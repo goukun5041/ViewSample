@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#A1A9BA"
-    android:orientation="vertical">
+    android:orientation="vertical"><!--ここで水平揃えてる-->
 
     <!--名前入力-->
     <TextView
@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#df7401"
-        android:orientation="horizontal">
+        android:orientation="horizontal"><!--ここで平行揃えてる-->
 
         <!--ドリンク-->
         <CheckBox
