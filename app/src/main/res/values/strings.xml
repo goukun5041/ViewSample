@@ -21,13 +21,24 @@
 
     <!--選択ボックス-->
     <string-array name="sp_curryList">
-        <Item>ドライカレー</Item>
+        <item>ドライカレー</item>
         <item>カツカレー</item>
         <item>ビーフカレー</item>
         <item>チキンカレー</item>
         <item>シーフードカレー</item>
         <item>キーマカレー</item>
         <item>グリーンカレー</item>
+    </string-array>
+
+    <!--リスト-->
+    <string-array name="lv_cocktaillist">
+        <item>ホワイトレディー</item>
+        <item>バラライカ</item>
+        <item>XYZ</item>
+        <item>ニューヨーク</item>
+        <item>マンハッタン</item>
+        <item>ミシシッピピュール</item>
+        <item>ブルーハワイ</item>
     </string-array>
 
 </resources>
